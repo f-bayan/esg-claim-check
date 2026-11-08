@@ -142,4 +142,4 @@ Note that `05_evaluate.py` only reads runs 1 to 3. The report PDFs are not inclu
 
 ## License
 
-The code and my annotations are under the MIT license. The claim texts and table rows are short excerpts from the public reports of the companies, and they are included so that the evaluation can be reproduced. Their copyright stays with the companies. See [LICENSE](LICENSE).
+The code and my annotations are under the MIT license (see [LICENSE](LICENSE)). The claim texts and table rows in `data/` and `results/` are short excerpts from the public reports of the companies, and they are included so that the evaluation can be reproduced. They are not covered by the MIT license, and their copyright stays with the companies.
