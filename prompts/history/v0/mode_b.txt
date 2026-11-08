@@ -1,0 +1,4 @@
+First reason step by step: find the rows and columns the claim is about, do any calculation, and compare with the claim. Keep the reasoning short, at most 120 words. Then give the label.
+
+Answer with a JSON object only, in this format:
+{"reasoning": "...", "label": "CONSISTENT" or "INCONSISTENT" or "CANNOT_VERIFY"}

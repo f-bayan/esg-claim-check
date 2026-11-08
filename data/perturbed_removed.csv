@@ -1,0 +1,25 @@
+item_id,source_claim_id,company,perturbation,claim,context,evidence,label,change_note,checked
+kpn_01_scope,kpn_01,kpn,scope,"Scope 1 is by far the largest category of emissions (2025: 99% of total GHG emissions, market-based).",,"metric tons CO2e | 2025
+Total gross indirect (Scope 3) | 768270
+Total GHG emissions (market-based) | 773214",CANNOT_VERIFY,Scope 3 -> Scope 1 (check),fix: should be INCONSISTENT
+kpn_03_number,kpn_03,kpn,number,"Outcome 2025 is lower than target 2025, mainly due to lower spend after inflation correction (Category 2) and decrease in emission factor of Dutch grid electricity (Category 11 and 17).",Scope 3,"metric tons CO2e / MWh | Base 2015 | 2024 | 2025 | Target 2025
+Scope 1 | 37500 | 6818 | 4943 | 6100
+Scope 2 market-based | 0 | 0 | 0 | 0
+Scope 3 | 1222404 | 823223 | 768270 | 794000
+Electricity consumption (MWh) | 769401 (2010) | 435468 | 430830 | 432000",INCONSISTENT,13 -> 17,fix: changed a category number
+signify_02_scope,signify_02,signify,scope,Signify has reduced 53% of its absolute carbon footprint in operations (Scope 3) compared to our 2019 baseline,,"tonnes CO2e | 2019 base | 2024 | 2025 | % change 25/24
+Scope 1+2 total (market-based) | 178058 | 85582 | 83474 | -2%
+Category 4: Upstream transportation | 160000 | 74230 | 82797 | 12%
+Category 6: Business travel | 24882 | 13415 | 9323 | -31%
+Category 7: Employee commuting | n.a. | 32846 | 30031 | -9%
+Scope 1+2+3 total (market-based) | 415056061 | 170584143 | 164975579 | -3%",CANNOT_VERIFY,Scope 1 & 2 -> Scope 3 (check),fix: should be INCONSISTENT
+asml_01_scope,asml_01,asml,scope,We have reduced our scope 3 emissions from 60 kt to 26 kt between 2019 and 2025 by deploying our energy savings master plans and purchasing more renewable electricity.,,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",CANNOT_VERIFY,scope 1 and 2 -> scope 3 (check),fix: label unclear
+asml_02_scope,asml_02,asml,scope,"In 2025, with emissions of 26 kt CO2e, we have already reduced absolute gross scope 3 emissions from 2019 by 56%, exceeding the SBTi target.",,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",CANNOT_VERIFY,scope 1 and 2 -> scope 3 (check),fix: label unclear

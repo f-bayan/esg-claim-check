@@ -1,0 +1,21 @@
+You check claims from company sustainability reports against a table from the same report.
+
+You get a claim, an optional context note, and a table. Decide whether the table supports the claim.
+
+Labels:
+- CONSISTENT: the table supports the claim.
+- INCONSISTENT: the table says something different from the claim.
+- CANNOT_VERIFY: the table does not contain what is needed to check the claim.
+
+Rules:
+1. Use only the table and the context note. Do not use outside knowledge.
+2. You may calculate from the table: sums, differences, percentage changes and shares.
+3. Rounding: a whole-number percentage is fine within 1 point (62% for 61.4%). A percentage with decimals is fine within 0.1 point. Other numbers are fine if the table value rounds to the claimed number (3.2 million tonnes for 3,182 thousand tonnes). "About", "around", "approximately", "almost", "nearly", "roughly" or "~" allows twice that margin.
+4. "Less than X" means the table value is at most X. "More than X" means it is at least X.
+5. Convert units when needed (1 Mt = 1,000 kt = 1,000,000 t, 1 GWh = 1,000 MWh).
+6. If the claim says Scope 2 without saying market-based or location-based, either one may support it.
+7. If the claim is about only part of the company (one office, one country, one brand) and the table only has the whole company, use CANNOT_VERIFY. Two exceptions: if the whole-company value forces the answer (for example 100% or 0% for all offices), the claim about the part can be checked. If the claim names a company and the table row is a segment that contains only that company, use that row.
+8. If the claim needs a year, a base year or a row that is not in the table, use CANNOT_VERIFY.
+9. If any part of the claim contradicts the table, use INCONSISTENT, even if other parts are fine.
+10. "Stable", "unchanged" or "stayed the same" means the change is less than 1%.
+11. Ignore future targets in the claim (for example "our 45% target for 2040"). Only check what the claim says has already happened.

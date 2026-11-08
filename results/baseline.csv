@@ -1,0 +1,175 @@
+item_id,source,perturbation,label,pred,rule,detail
+prosus_01,real,none,CONSISTENT,CANNOT_VERIFY,no_numbers,
+prosus_04,real,none,CONSISTENT,CANNOT_VERIFY,no_numbers,
+prosus_10,real,none,INCONSISTENT,INCONSISTENT,direction,23%
+prosus_13,real,none,CANNOT_VERIFY,CANNOT_VERIFY,no_numbers,
+prosus_24,real,none,CONSISTENT,CONSISTENT,all_matched,
+zalando_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+zalando_02,real,none,INCONSISTENT,INCONSISTENT,number,99.9% 0.1%
+zalando_03,real,none,CANNOT_VERIFY,CANNOT_VERIFY,year,2017 2025
+zalando_04,real,none,CANNOT_VERIFY,INCONSISTENT,number,100.0%
+aholddelhaize_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+aholddelhaize_02,real,none,CONSISTENT,CANNOT_VERIFY,no_numbers,
+aholddelhaize_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+aholddelhaize_04,real,none,INCONSISTENT,INCONSISTENT,number,2.6%
+aholddelhaize_05,real,none,CANNOT_VERIFY,INCONSISTENT,number,"1,070 1,199"
+adyen_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+adyen_02,real,none,CONSISTENT,CONSISTENT,all_matched,
+adyen_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+adyen_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+adyen_05,real,none,CONSISTENT,CONSISTENT,all_matched,
+heineken_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+heineken_02,real,none,CONSISTENT,CONSISTENT,all_matched,
+heineken_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+heineken_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+heineken_05,real,none,CANNOT_VERIFY,CANNOT_VERIFY,year,2024
+postnl_01,real,none,INCONSISTENT,INCONSISTENT,number,"3,915"
+postnl_02,real,none,INCONSISTENT,INCONSISTENT,direction,from/to
+postnl_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+postnl_04,real,none,INCONSISTENT,INCONSISTENT,number,"13,835"
+postnl_05,real,none,CONSISTENT,CONSISTENT,all_matched,
+kpn_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+kpn_02,real,none,CONSISTENT,CANNOT_VERIFY,no_numbers,
+kpn_03,real,none,CONSISTENT,CANNOT_VERIFY,no_numbers,
+kpn_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+kpn_05,real,none,CANNOT_VERIFY,INCONSISTENT,number,117 147
+signify_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+signify_02,real,none,CONSISTENT,CONSISTENT,all_matched,
+signify_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+signify_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+signify_05,real,none,CANNOT_VERIFY,INCONSISTENT,number,12% 44% 44%
+akzonobel_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+akzonobel_02,real,none,CONSISTENT,CONSISTENT,all_matched,
+akzonobel_03,real,none,INCONSISTENT,CONSISTENT,all_matched,
+akzonobel_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+akzonobel_05,real,none,CANNOT_VERIFY,INCONSISTENT,number,84 83 100% 40 33
+asml_01,real,none,CONSISTENT,CONSISTENT,all_matched,
+asml_02,real,none,CONSISTENT,CONSISTENT,all_matched,
+asml_03,real,none,CONSISTENT,CONSISTENT,all_matched,
+asml_04,real,none,CONSISTENT,CONSISTENT,all_matched,
+asml_05,real,none,CANNOT_VERIFY,INCONSISTENT,number,28 7
+prosus_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+prosus_04_direction,synthetic,direction,INCONSISTENT,CANNOT_VERIFY,no_numbers,
+prosus_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+prosus_24_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,85%
+prosus_24_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+zalando_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+zalando_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,1.0% 1.0%
+aholddelhaize_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,49%
+aholddelhaize_01_direction,synthetic,direction,INCONSISTENT,CONSISTENT,all_matched,
+aholddelhaize_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2015
+aholddelhaize_01_scope,synthetic,scope,CANNOT_VERIFY,CONSISTENT,all_matched,
+aholddelhaize_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+aholddelhaize_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+aholddelhaize_02_scope,synthetic,scope,CANNOT_VERIFY,CANNOT_VERIFY,no_numbers,
+aholddelhaize_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+aholddelhaize_03_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,10.8%
+aholddelhaize_03_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,0.8%
+aholddelhaize_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2017
+aholddelhaize_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+adyen_01_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+adyen_01_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,47%
+adyen_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+adyen_01_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+adyen_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,47% 17628 11966
+adyen_02_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+adyen_02_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,from/to
+adyen_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+adyen_02_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+adyen_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,"22% 2,926 3,748"
+adyen_03_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+adyen_03_direction,synthetic,direction,INCONSISTENT,CONSISTENT,all_matched,
+adyen_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+adyen_03_scope,synthetic,scope,INCONSISTENT,CONSISTENT,all_matched,
+adyen_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,84%
+adyen_04_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,80%
+adyen_04_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,90%
+adyen_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+adyen_04_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+adyen_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,"90% 7,278 3,840"
+adyen_05_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+adyen_05_drop_row,synthetic,drop_row,CANNOT_VERIFY,CONSISTENT,all_matched,
+heineken_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,19.4
+heineken_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+heineken_01_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+heineken_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+heineken_02_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,48%
+heineken_02_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,38% 34%
+heineken_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2019
+heineken_02_scope,synthetic,scope,INCONSISTENT,CONSISTENT,all_matched,
+heineken_03_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+heineken_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2019
+heineken_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,23% 23%
+heineken_04_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,57%
+heineken_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+heineken_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+postnl_03_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,"24,807"
+postnl_03_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,"19,082"
+postnl_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+postnl_03_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+postnl_03_scope,synthetic,scope,INCONSISTENT,CONSISTENT,all_matched,
+postnl_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,"19,082"
+postnl_05_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,43%
+postnl_05_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+postnl_05_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+kpn_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,89%
+kpn_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+kpn_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+kpn_02_direction,synthetic,direction,INCONSISTENT,CANNOT_VERIFY,no_numbers,
+kpn_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+kpn_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,no_numbers,
+kpn_03_direction,synthetic,direction,INCONSISTENT,CANNOT_VERIFY,no_numbers,
+kpn_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+kpn_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,no_numbers,
+kpn_04_direction,synthetic,direction,INCONSISTENT,CONSISTENT,all_matched,
+kpn_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+kpn_04_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+kpn_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,CONSISTENT,all_matched,
+signify_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,70%
+signify_01_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,60%
+signify_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+signify_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,60%
+signify_02_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+signify_02_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,53%
+signify_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+signify_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,CONSISTENT,all_matched,
+signify_03_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,41%
+signify_03_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,31% 9%
+signify_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+signify_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,31% 9%
+signify_04_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,25%
+signify_04_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,15%
+signify_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2022
+signify_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,15%
+akzonobel_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,57%
+akzonobel_01_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,47% 41%
+akzonobel_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2021
+akzonobel_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,CANNOT_VERIFY,empty_table,
+akzonobel_02_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,20%
+akzonobel_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2015
+akzonobel_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,10% 9%
+akzonobel_04_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,29%
+akzonobel_04_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,19%
+akzonobel_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2015
+akzonobel_04_scope,synthetic,scope,CANNOT_VERIFY,CONSISTENT,all_matched,
+akzonobel_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,19%
+asml_01_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,78
+asml_01_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,from/to
+asml_01_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+asml_01_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+asml_01_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,60 26
+asml_02_number,synthetic,number,INCONSISTENT,CONSISTENT,all_matched,
+asml_02_direction,synthetic,direction,INCONSISTENT,CONSISTENT,all_matched,
+asml_02_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+asml_02_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+asml_02_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,26
+asml_03_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,"5,686"
+asml_03_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,from/to
+asml_03_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+asml_03_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+asml_03_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,"4,374 6,443"
+asml_04_number,synthetic,number,INCONSISTENT,INCONSISTENT,number,"6,215"
+asml_04_direction,synthetic,direction,INCONSISTENT,INCONSISTENT,direction,than
+asml_04_year,synthetic,year,CANNOT_VERIFY,CANNOT_VERIFY,year,2016
+asml_04_unit,synthetic,unit,INCONSISTENT,CONSISTENT,all_matched,
+asml_04_drop_row,synthetic,drop_row,CANNOT_VERIFY,INCONSISTENT,number,"4,781 2,841"

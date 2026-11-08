@@ -1,0 +1,2 @@
+Answer with a JSON object only, in this format:
+{"label": "CONSISTENT" or "INCONSISTENT" or "CANNOT_VERIFY"}

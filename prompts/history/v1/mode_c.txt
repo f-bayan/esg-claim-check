@@ -1,0 +1,28 @@
+Do not give a label and do not calculate. A program will do the calculation and decide the label using the rules above. Your job is to read the claim and the table.
+
+List every number and every up, down or stable statement in the claim that should be checked. For each one, give:
+- claimed_text: the number with its unit, copied from the claim (for example "64%", "3.2 million tonnes", "1,450 tCO2e"). Write the number in digits without spaces ("0" for "zero"). If the claim only refers to a target or threshold that is given in the context note or the note above the table (for example "we achieved our target"), copy the number from there. Use "" if there is no number.
+- relation: "equal", "about", "less_than" or "more_than". Use "about" for words like about, around, approximately, almost, nearly, roughly or ~.
+- type:
+  "value" if the number is a table value, or a sum of table values.
+  "change" if the number is a percentage change between two years.
+  "difference" if the number is the absolute change between two years.
+  "share" if the number is a percentage share of a total.
+  "direction_only" if the claim only says something went up, went down or stayed stable, without a number.
+- direction: "up", "down", "same" or "none", meaning what the claim says happened. Use "up" or "down" for every change and difference.
+- found: true if the table has the cells needed. false if it does not, or if rule 7 or 8 means the claim cannot be checked.
+- cells: the table cells needed, each with:
+  row: the row name, copied exactly from the table.
+  column: the column header, copied exactly from the table.
+  role: "value" for type value. "old" and "new" for change, difference and direction_only. "part" and "total" for share.
+  Several cells with the same role are added up.
+
+More instructions:
+- For a change or difference, always cite the old and new value cells. Never cite a row or column that already shows a % change or % reduction.
+- "Decreased by X to Y (2024: Z)" is three facts: the change X, the value Y and the value Z.
+- "A is higher (or lower) than B" is a direction_only fact with B as old and A as new.
+- If the claim says Scope 2 without the method, use the market-based row if there is one.
+- Do not list years, scope or category numbers, future targets, or causes and background (rule 12). If found is false, cells can be empty.
+
+Answer with a JSON object only, in this format:
+{"facts": [{"claimed_text": "...", "relation": "...", "type": "...", "direction": "...", "found": true, "cells": [{"row": "...", "column": "...", "role": "..."}]}]}

@@ -1,0 +1,60 @@
+claim_id,company,page_claim,page_table,claim,evidence,claim_type,label,calc,comment
+prosus_02,prosus,3,3,We procured 100% renewable energy for our Amsterdam and London offices.,"% | FY25
+Renewable energy (all corporate offices) | 100",value,CONSISTENT,100% for all offices,"table not split by office, guideline 5 exception"
+prosus_03,prosus,4,4,Our air business travel emissions (table 4) rose in FY25.,"tCO2e | FY25 | FY24
+C6 Business travel (corporate) | 5818 | 4842",direction,CONSISTENT,5818 > 4842,
+prosus_05,prosus,5,4,"This led to increased reliance on professional services, such as consultants, and a rise in business travel.","tCO2e | FY25 | FY24
+Consulting fees | 3053 | 1415
+C6 Business travel | 5818 | 4842",direction,CONSISTENT,3053 > 1415 and 5818 > 4842,"table shows emissions from spend, used as proxy for reliance"
+prosus_06,prosus,5,5,"At the same time, the growth of AI applications and tools across our group contributed to higher IT-related expenses (refer to table 6).","tCO2e | FY25 | FY24
+IT costs - software | 1250 | 172",direction,CONSISTENT,1250 > 172,"table shows spend-based emissions, not expenses directly"
+prosus_07,prosus,8,6,The closure over the past two years of several office facilities and inspection centres reduced scope 2 emissions.,"tCO2e | FY25 | FY24 | FY23
+Scope 2 Classifieds | 671 | 1211 | 3249",direction,CONSISTENT,3249 > 1211 > 671,"only the decrease is checkable, not the cause"
+prosus_08,prosus,8,6,"In FY25, the remaining dark stores from iFood's grocery business were closed, resulting in a significant decrease in scope 2 emissions.","tCO2e | FY25 | FY24
+Scope 2 Food Delivery | 137 | 303",direction,CONSISTENT,(303-137)/303 = 54.8% decrease,
+prosus_09,prosus,8,6,"In FY25, its approach changed and the business focused on operational efficiencies, instead resulting in higher market-based emissions.","tCO2e | FY25 | FY24
+Scope 2 Payments and Fintech | 1869 | 0",direction,CONSISTENT,1869 > 0,table 9 does not say market-based. FY24 = 0 fits the RECs bought that year
+prosus_11,prosus,8,6,"Carbon intensity remained below FY23 levels, suggesting continued progress in decarbonising the business.","tCO2e/US$m | FY25 | FY23
+Intensity Payments and Fintech | 1.6 | 1.8",level,CONSISTENT,1.6 < 1.8,"PAYU RULE: about PayU, uses segment row"
+prosus_12,prosus,8,6,"With the separate reporting of Classifieds Autos, a relatively carbon-intensive business, the company's carbon intensity reflects a decrease.","tCO2e/US$m | FY25 | FY24
+Intensity Classifieds | 1.4 | 2.3",direction,CONSISTENT,1.4 < 2.3,"PAYU RULE: about OLX, uses segment row"
+prosus_14,prosus,8,6,"In contrast, scope 1 emissions declined as the company transitioned its fleet from internalcombustion engine models to electric.","tCO2e | FY25 | FY24
+Scope 1 Edtech (GoodHabitz + Stack Overflow) | 129 | 145",direction,CANNOT_VERIFY,"segment fell 145 -> 129, but it has two companies",about GoodHabitz only. Edtech segment is not split
+prosus_15,prosus,8,6,"Stack Overflow's scope 2 emissions decreased due to a higher share of green electricity, as use shifted further towards data centres powered by renewable energy.","tCO2e | FY25 | FY24
+Scope 2 Edtech (GoodHabitz + Stack Overflow) | 230 | 137",direction,CANNOT_VERIFY,"segment rose, but it has two companies",Edtech segment is not split
+prosus_16,prosus,8,6,"Looking at the indicator for the FY23-25 period, all segments prove they are able to decouple growth from emissions, besides Edtech.","tCO2e/US$m | FY25 | FY23
+Etail | 6.6 | 7.9
+Classifieds | 1.4 | 2.9
+Food Delivery | 0.1 | 0.4
+Payments and Fintech | 1.6 | 1.8
+Edtech | 2.1 | 1.6",direction,CONSISTENT,"all fell except Edtech, which rose",
+prosus_17,prosus,8,6,"eMAG's carbon intensity decreased in FY25, reflecting an 11% rise in revenue and corresponding drop in intensity.","tCO2e/US$m | FY25 | FY24
+Intensity Etail | 6.6 | 7.3",direction,CONSISTENT,6.6 < 7.3,"PAYU RULE: about eMAG, uses segment row. Revenue part not checkable"
+prosus_18,prosus,8,6,"Following operational changes made to its groceries business, iFood's carbon intensity continues to decrease.","tCO2e/US$m | FY25 | FY24 | FY23
+Intensity Food Delivery | 0.1 | 0.2 | 0.4",direction,CONSISTENT,0.4 > 0.2 > 0.1,"PAYU RULE: about iFood, uses segment row"
+prosus_19,prosus,8,6,GoodHabitz and Stack Overflow reported a modest increase in emissions in FY25.,"tCO2e | FY25 | FY24
+Scope 1 Edtech | 129 | 145
+Scope 2 Edtech | 230 | 137",change,CONSISTENT,"scope 1+2: 282 -> 359, +27%",both companies together = the Edtech segment. 'modest' is a judgment
+prosus_20,prosus,8,7,"Energy consumption in most segments remained relatively stable in FY25 compared to FY24, with a slight increase primarily driven by higher energy use at eMAG and PayU.","MWh | FY25 | FY24
+Etail | 78814 | 76689
+Food Delivery | 1851 | 2258
+Classifieds | 5880 | 5089
+Payments and Fintech | 3584 | 3006
+Edtech | 1980 | 1615",change,CONSISTENT,total 88657 -> 92109 (+3.9%). Etail +2125 and Payments +578 = 2703 of the 3452 rise (78%),Classifieds rose more than PayU (+791)
+prosus_21,prosus,8,7,"Although PayU did not procure renewable energy certificates this year, overall renewable energy consumption for the subsidiaries grew, supported by eMAG's continued investment in on-site solar and the uptake of green energy contracts across other business units.","MWh | FY25 | FY24
+Total renewable energy consumption | 18277 | 17469",direction,CONSISTENT,18277 > 17469,
+prosus_22,prosus,4,4,"Consequential to a new strategic focus on expansion and strengthening our ecommerce portfolio, the demand for corporate employee travel increased in the past year.","km | FY25 | FY24
+Air travel distance | 15699045 | 11978410",direction,CONSISTENT,"15699045 > 11978410, +31%","demand for travel read as distance flown, not emissions"
+prosus_23,prosus,9,7,"Financed emissions from social and internet platforms are 100% covered by Tencent's target, and the target of Delivery Hero, in our Food Delivery segment, covers 85.5% of emissions in that segment.","% | FY25
+Share covered with SBTi, Social and internet platforms | 100
+Share covered with SBTi, Food Delivery | 85.5",value,CONSISTENT,100 = 100 and 85.5 = 85.5,
+prosus_25,prosus,9,7,"In FY25, category 1 emissions declined significantly after implementing improved methodology, including supplier-specific data.","tCO2e | FY25
+C1 Payments and Fintech | 181021",direction,CANNOT_VERIFY,table 12 has FY25 only,about PayU. No FY24 value to compare
+prosus_26,prosus,9,7,"Business travel (category 6) increased in FY25, driven by a rebound in global mobility across all travel modes and a 60% rise in hotel nights.","tCO2e | FY25
+C6 Classifieds | 2059",direction,CANNOT_VERIFY,table 12 has FY25 only,"about OLX. No FY24 value, hotel nights not in any table"
+signify_06,signify,50,52,"In 2025, GHG emissions from logistics operations increased by 12% compared to 2024, mainly driven by increased road freight emissions.","tonnes CO2e | 2019 base | 2024 | 2025 | % change 25/24
+Scope 1+2 total (market-based) | 178058 | 85582 | 83474 | -2%
+Category 4: Upstream transportation | 160000 | 74230 | 82797 | 12%
+Category 6: Business travel | 24882 | 13415 | 9323 | -31%
+Category 7: Employee commuting | n.a. | 32846 | 30031 | -9%
+Scope 1+2+3 total (market-based) | 415056061 | 170584143 | 164975579 | -3%",change,CONSISTENT,(82797-74230)/74230 = 11.5%,extra claim. 11.5% at the rounding edge

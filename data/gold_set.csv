@@ -1,0 +1,226 @@
+claim_id,company,page_claim,page_table,claim,context,evidence,claim_type,label,inconsistency_type,calc,comment
+prosus_01,prosus,3,3,We maintained our corporate emissions at zero.,"Prosus corporate operations (own offices), scope 1 and 2","tCO2e | FY25 | FY24
+Scope 1 (corporate) | 0 | 0
+Scope 2 market-based (corporate) | 0 | 0",level,CONSISTENT,,all values are 0,
+prosus_04,prosus,4,4,"The increase in our corporate scope 3 emissions (table 3) is mostly due to the growth in purchased goods and services, fuelled by increased commercial activities at corporate level.",,"tCO2e | FY25 | FY24
+C1 Purchased goods and services | 8085 | 2557
+Total scope 3 (corporate) | 14048 | 7797",change,CONSISTENT,,"total scope 3 7797 -> 14048 (increase), C1 2557 -> 8085. The cause (""mostly due to purchased goods"") is not checked",report says table 3 but the numbers are in table 4
+prosus_10,prosus,8,6,"PayU's emissions increased slightly, while revenue grew by 23%, particularly in Türkiye.","Payments and Fintech segment, where PayU is the only named company","tCO2e | FY25 | FY24
+Scope 1 Payments and Fintech | 340 | 442
+Scope 2 Payments and Fintech | 1869 | 0",change,INCONSISTENT,possible definition difference,"scope 1+2: 442 -> 2209, about 5 times higher","PAYU RULE: assumes PayU = Payments and Fintech segment. Direction is right but 'slightly' does not fit a 5x rise. Candidate real inconsistency. Table 9 is market-based (FY24 = 0 after RECs). If the company meant location-based scope 2, the rise may be small, but that number is not in the report. Table 10 intensity 0.4 -> 1.6 with 23% revenue growth also gives about 4.9x"
+prosus_13,prosus,8,6,"Scope 2 emissions at GoodHabitz continued to rise, driven by increased employee office attendance and the growing use of electric company cars.","Edtech segment, which contains two companies: GoodHabitz and Stack Overflow","tCO2e | FY25 | FY24
+Scope 2 Edtech (GoodHabitz + Stack Overflow) | 230 | 137",direction,CANNOT_VERIFY,,"segment rose 137 -> 230, but it has two companies",Edtech segment is not split by company
+prosus_24,prosus,9,7,"Combined, these targets cover 75% of total financed emissions.","'these targets' = SBTi targets of Tencent and Delivery Hero, covering financed emissions","% | FY25
+Share covered with SBTi, Total | 74.6",value,CONSISTENT,,74.6 rounds to 75,
+zalando_01,zalando,38,46,"In 2025, scope 1 and scope 2 contributed less than 1.0% (prior year: < 1.0%) of our total GHG emissions.",,"tCO2eq | 2025 | 2024
+Gross scope 1 | 8066.9 | 6510.7
+Gross scope 2 (market-based) | 5405.8 | 5127.7
+Gross scope 3 | 2527277.9 | 2102244.4
+Total GHG (market-based) | 2540750.6 | 2113882.8",value,CONSISTENT,,2025: (8066.9+5405.8)/2540750.6 = 0.53%. 2024: (6510.7+5127.7)/2113882.8 = 0.55%. Both < 1%,
+zalando_02,zalando,43,46,Our scope 3 emissions accounted for 99.5% (prior year: 99.9%) and scope 1 and 2 emissions accounted for 0.5% (prior year: 0.1%) of our total GHG emissions.,,"tCO2eq | 2025 | 2024
+Gross scope 1 | 8066.9 | 6510.7
+Gross scope 2 (market-based) | 5405.8 | 5127.7
+Gross scope 3 | 2527277.9 | 2102244.4
+Total GHG (market-based) | 2540750.6 | 2113882.8",value,INCONSISTENT,possible definition difference,"2025: scope 3 99.47%, scope 1+2 0.53% (match). 2024: scope 3 99.45%, scope 1+2 0.55% (claim says 99.9% and 0.1%)","2025 part matches. Prior-year part does not match the restated 2024 values in the table (scope 3 2024 was revised down 39.3%). The prior-year part may use the figures from before the restatement. Also conflicts with p.38, which says prior year < 1.0%"
+zalando_03,zalando,40,41,"As of the end of 2025, we reduced scope 1 and 2 GHG emissions by 80.8% against 2017 (prior year: 82.0%).",,"tCO2eq | 2022 baseline
+Scope 1 and 2 (market-based, target scope) | 6342",change,CANNOT_VERIFY,,no 2017 value anywhere in the report,old 2017-based target. Target table uses a 2022 baseline
+zalando_04,zalando,38,43,We procured 100.0% of our electricity from renewable sources in 2025.,,"MWh | 2025
+Purchased electricity, heat, steam and cooling from fossil sources | 21692.8
+Purchased electricity, heat, steam and cooling from renewable sources | 135771.5",value,CANNOT_VERIFY,,"table mixes electricity with heat, steam and cooling","21692.8 MWh fossil could be district heating (p.44), but the table does not split it"
+aholddelhaize_01,aholddelhaize,105,105,"Compared to our 2018 baseline, our scope 1 and 2 emissions decreased by 39% in 2025.",,"MtCO2e | 2025 | 2024 | 2018 baseline
+Scope 1 and 2 (own operations) | 2.44 | 2.57 | 4.0
+% reduction vs 2018 baseline | 39% | 36% |",change,CONSISTENT,,(4.0-2.44)/4.0 = 39.0%,
+aholddelhaize_02,aholddelhaize,105,97,We have achieved our 2025 scope 1 and 2 emissions-reduction target,,"Target (p.97): scope 1 and 2 market-based, >38% reduction by 2025 vs 2018
+MtCO2e | 2025 | 2024 | 2018 baseline
+Scope 1 and 2 (own operations) | 2.44 | 2.57 | 4.0
+% reduction vs 2018 baseline | 39% | 36% |",level,CONSISTENT,,39% > 38%,rest of the sentence is about 2035 and is skipped
+aholddelhaize_03,aholddelhaize,105,105,"Compared to our 2020 baseline, scope 3 reported emissions were 0.8% lower, with a 5.0% reduction in E&I-related emissions partially offset by a 5.2% increase in FLAG emissions.",,"MtCO2e | 2025 | 2024 | 2020 baseline
+Scope 3 FLAG | 17.72 | 18.17 | 16.85
+% reduction/(increase) FLAG vs baseline | (5.2)% | (7.9)% |
+Scope 3 E&I | 22.38 | 22.67 | 23.57
+% reduction E&I vs baseline | 5.0% | 3.8% |",change,CONSISTENT,,"total (16.85+23.57)=40.42 -> (17.72+22.38)=40.10, -0.79%. E&I -5.05%. FLAG +5.16%",
+aholddelhaize_04,aholddelhaize,105,105,"In 2025, our brands reported scope 3 emissions that were reduced by 1.8% compared to 2024, reflecting a 2.6% reduction in FLAG-related emissions and a 1.2% decrease in E&I-related emissions.",,"MtCO2e | 2025 | 2024 | 2020 baseline
+Scope 3 FLAG | 17.72 | 18.17 | 16.85
+% reduction/(increase) FLAG vs baseline | (5.2)% | (7.9)% |
+Scope 3 E&I | 22.38 | 22.67 | 23.57
+% reduction E&I vs baseline | 5.0% | 3.8% |",change,INCONSISTENT,rounding,"total 40.84 -> 40.10 = -1.81% (match). FLAG (18.17-17.72)/18.17 = 2.48%, claim 2.6%. E&I (22.67-22.38)/22.67 = 1.28%, claim 1.2%","FLAG 2.48% vs claim 2.6% is 0.12 points off, more than the 0.1 point tolerance. Even with table rounding the change is at most about 2.53%. Total (1.81%) and E&I (1.28% vs 1.2%) are within tolerance"
+aholddelhaize_05,aholddelhaize,105,105,"In 2025, these emissions totaled 1,070 kilotonnes, compared to 1,199 kilotonnes in 2024.",'these emissions' = GHG emissions from refrigerant leakages,"MtCO2e | 2025 | 2024
+Scope 1 and 2 (own operations, all sources) | 2.44 | 2.57",change,CANNOT_VERIFY,,"table has only total scope 1 and 2, no refrigerant row","about refrigerant leakage. Breakdown is in the Climate change note, which is not in this document"
+adyen_01,adyen,104,103,Scope 2 location-based emissions increased by 47% to 17628 tCO2e (2024: 11966 tCO2e).,,"tCO2e | 2025 | 2024
+Gross scope 1 | 568 | 626
+Scope 2 market-based | 2926 | 3748
+Scope 2 location-based | 17628 | 11966
+Total scope 3 | 80324 | 67114
+Scope 3 share of total GHG (%) | 82 | 84
+Category 11 | 7278 | 3840
+Total GHG market-based | 83818 | 71488",change,CONSISTENT,,(17628-11966)/11966 = 47.3%,
+adyen_02,adyen,104,103,"Scope 2 market-based emissions decreased by 22% to 2,926 tCO2e (2024: 3,748 tCO2e).",,"tCO2e | 2025 | 2024
+Gross scope 1 | 568 | 626
+Scope 2 market-based | 2926 | 3748
+Scope 2 location-based | 17628 | 11966
+Total scope 3 | 80324 | 67114
+Scope 3 share of total GHG (%) | 82 | 84
+Category 11 | 7278 | 3840
+Total GHG market-based | 83818 | 71488",change,CONSISTENT,,(3748-2926)/3748 = 21.9%,
+adyen_03,adyen,104,103,"In 2025, total Scope 3 emissions increased by 20%, but remained in line with the prior year as a proportion of total GHG emissions at 82% (2024: 84%).",,"tCO2e | 2025 | 2024
+Gross scope 1 | 568 | 626
+Scope 2 market-based | 2926 | 3748
+Scope 2 location-based | 17628 | 11966
+Total scope 3 | 80324 | 67114
+Scope 3 share of total GHG (%) | 82 | 84
+Category 11 | 7278 | 3840
+Total GHG market-based | 83818 | 71488",change,CONSISTENT,,(80324-67114)/67114 = 19.7%. 82% and 84% match the table,"the table's % column uses the location-based total (98520). Against the market-based total (83818) scope 3 is 95.8%. Matches the table, but the denominator is not stated"
+adyen_04,adyen,105,103,"Category 11 emissions increased by 90% to 7,278 tCO2e in 2025 (2024: 3,840 tCO2e).",,"tCO2e | 2025 | 2024
+Gross scope 1 | 568 | 626
+Scope 2 market-based | 2926 | 3748
+Scope 2 location-based | 17628 | 11966
+Total scope 3 | 80324 | 67114
+Scope 3 share of total GHG (%) | 82 | 84
+Category 11 | 7278 | 3840
+Total GHG market-based | 83818 | 71488",change,CONSISTENT,,"(7278-3840)/3840 = 89.5%, rounds to 90%",
+adyen_05,adyen,104,103,"In 2025, Scope 1 emissions accounted for less than 1% of our total inventory.",,"tCO2e | 2025 | 2024
+Gross scope 1 | 568 | 626
+Scope 2 market-based | 2926 | 3748
+Scope 2 location-based | 17628 | 11966
+Total scope 3 | 80324 | 67114
+Scope 3 share of total GHG (%) | 82 | 84
+Category 11 | 7278 | 3840
+Total GHG market-based | 83818 | 71488",value,CONSISTENT,,568/83818 = 0.68%,table shows 1% after rounding
+heineken_01,heineken,173,175,"HEINEKEN's carbon footprint (Scope 1, 2 and 3) in 2025 was 14.9 million tonnes CO2eq.",,"ktonnes CO2eq, gross | 2025
+Total GHG emissions (market-based) | 14924",value,CONSISTENT,,14924 kt = 14.9 Mt,
+heineken_02,heineken,174,175,We have reduced Scope 1 and 2 emissions by 38% (2024: 34%) compared to the 2022 baseline.,,"ktonnes CO2eq, SBTi boundary | 2025 | 2024 | 2022 baseline
+Scope 1 | 878 | 933 | 1100
+Scope 2 market-based | 99 | 114 | 482
+Scope 3 | 11976 | 12408 | 14399
+Scope 3 FLAG | 2372 | 2394 | 3091
+Scope 3 non-FLAG | 9604 | 10014 | 11308
+Total | 12953 | 13455 | 15981",change,CONSISTENT,,2025: (1582-977)/1582 = 38.2%. 2024: (1582-1047)/1582 = 33.8%,"SBTi boundary, scope 2 market-based"
+heineken_03,heineken,174,175,"Agricultural emissions (FLAG) remained stable compared with 2024, following cumulative reductions of 23% (2024: 23%) since 2022.",,"ktonnes CO2eq, SBTi boundary | 2025 | 2024 | 2022 baseline
+Scope 1 | 878 | 933 | 1100
+Scope 2 market-based | 99 | 114 | 482
+Scope 3 | 11976 | 12408 | 14399
+Scope 3 FLAG | 2372 | 2394 | 3091
+Scope 3 non-FLAG | 9604 | 10014 | 11308
+Total | 12953 | 13455 | 15981",change,CONSISTENT,,"2372 vs 2394 (-0.9%, stable). 2025: (3091-2372)/3091 = 23.3%. 2024: (3091-2394)/3091 = 22.5%","2024 value 22.5% sits right at the rounding edge. ""Remained stable"" fits: FLAG changed -0.9%, under the 1% rule for stable (section 4)"
+heineken_04,heineken,176,176,The total percentage of energy consumption from renewable sources is 47% (2024: 46%).,,"GWh | 2025 | 2024
+Total energy consumption from renewable sources | 3513 | 3568
+Total energy consumption | 7543 | 7792",value,CONSISTENT,,2025: 3513/7543 = 46.6%. 2024: 3568/7792 = 45.8%,
+heineken_05,heineken,176,176,"In 2024, combined biogenic emissions from Scope 1 and 2 was 525 Ktonnes CO2eq.",,"Ktonnes CO2eq | 2025
+Biogenic emissions disclosed separately from Scope 1 | 1146
+Biogenic emissions disclosed separately from Scope 2 | 186",value,CANNOT_VERIFY,,table has 2025 only,2024 biogenic value is only in the text
+postnl_01,postnl,200,199,"Our gross scope 1 emissions decreased by 3,915 tonnes in 2025 compared to 2024, mainly due to lower emissions across transport.",,"tonnes CO2e | 2021 base | 2024 | 2025 | change
+Scope 1 | 41081 | 23925 | 19986 | (16)%
+Scope 2 location-based | 30328 | 18857 | 17126 | (9)%
+Scope 2 market-based | 171 | 80 | 94 | 18%
+Scope 3 | 338651 | 266336 | 247254 | (7)%
+4. Upstream transportation and distribution | 213110 | 168350 | 155432 | (8)%",change,INCONSISTENT,small difference,"23925 - 19986 = 3939, claim says 3915","off by 24 tonnes. 2024 scope 1 was restated (biogas GoO), the text may use an older figure"
+postnl_02,postnl,200,199,"Market-based scope 2 emissions dropped to 94 tonnes in 2025 (2024: 80), due to district heating only, with one site vacated.",,"tonnes CO2e | 2021 base | 2024 | 2025 | change
+Scope 1 | 41081 | 23925 | 19986 | (16)%
+Scope 2 location-based | 30328 | 18857 | 17126 | (9)%
+Scope 2 market-based | 171 | 80 | 94 | 18%
+Scope 3 | 338651 | 266336 | 247254 | (7)%
+4. Upstream transportation and distribution | 213110 | 168350 | 155432 | (8)%",direction,INCONSISTENT,clear,80 -> 94 is an increase (+18% in the table),the sentence's own numbers contradict 'dropped'
+postnl_03,postnl,200,199,"Gross scope 3 CO2e emissions decreased by 19,082 tonnes in 2025.",,"tonnes CO2e | 2021 base | 2024 | 2025 | change
+Scope 1 | 41081 | 23925 | 19986 | (16)%
+Scope 2 location-based | 30328 | 18857 | 17126 | (9)%
+Scope 2 market-based | 171 | 80 | 94 | 18%
+Scope 3 | 338651 | 266336 | 247254 | (7)%
+4. Upstream transportation and distribution | 213110 | 168350 | 155432 | (8)%",change,CONSISTENT,,266336 - 247254 = 19082,
+postnl_04,postnl,200,199,"Emissions from outsourced transport decreased by 13,835 tonnes CO₂e to 155,432 in 2025 (2024: 168,350).",,"tonnes CO2e | 2021 base | 2024 | 2025 | change
+Scope 1 | 41081 | 23925 | 19986 | (16)%
+Scope 2 location-based | 30328 | 18857 | 17126 | (9)%
+Scope 2 market-based | 171 | 80 | 94 | 18%
+Scope 3 | 338651 | 266336 | 247254 | (7)%
+4. Upstream transportation and distribution | 213110 | 168350 | 155432 | (8)%",change,INCONSISTENT,clear,"168350 - 155432 = 12918, claim says 13835",the sentence's own before and after values give 12918
+postnl_05,postnl,197,197,"The share of emission-free last-mile delivery of mail and parcels was 33% in 2025 (2024: 28%), which is on target.",,"% | 2024 | 2025
+Share of emission-free delivery of mail and parcels in the last-mile | 28 | 33",value,CONSISTENT,,33 = 33 and 28 = 28,"'on target' part not checked, target is only in the text"
+kpn_01,kpn,96,100,"Scope 3 is by far the largest category of emissions (2025: 99% of total GHG emissions, market-based).",,"metric tons CO2e | 2025
+Total gross indirect (Scope 3) | 768270
+Total GHG emissions (market-based) | 773214",value,CONSISTENT,,768270/773214 = 99.4%,
+kpn_02,kpn,97,96,The result for 2025 is significantly lower than 2024.,Scope 1,"metric tons CO2e / MWh | Base 2015 | 2024 | 2025 | Target 2025
+Scope 1 | 37500 | 6818 | 4943 | 6100
+Scope 2 market-based | 0 | 0 | 0 | 0
+Scope 3 | 1222404 | 823223 | 768270 | 794000
+Electricity consumption (MWh) | 769401 (2010) | 435468 | 430830 | 432000",direction,CONSISTENT,,"6818 -> 4943, -27.5%","about Scope 1, under the Scope 1 heading"
+kpn_03,kpn,97,96,"Outcome 2025 is lower than target 2025, mainly due to lower spend after inflation correction (Category 2) and decrease in emission factor of Dutch grid electricity (Category 11 and 13).",Scope 3,"metric tons CO2e / MWh | Base 2015 | 2024 | 2025 | Target 2025
+Scope 1 | 37500 | 6818 | 4943 | 6100
+Scope 2 market-based | 0 | 0 | 0 | 0
+Scope 3 | 1222404 | 823223 | 768270 | 794000
+Electricity consumption (MWh) | 769401 (2010) | 435468 | 430830 | 432000",level,CONSISTENT,,768270 < 794000,"about Scope 3. Only the comparison with the target is checkable, not the causes"
+kpn_04,kpn,93,96,We reduced consumption by ~4 GWh in 2025 despite rising data-driven energy demand.,Electricity consumption,"metric tons CO2e / MWh | Base 2015 | 2024 | 2025 | Target 2025
+Scope 1 | 37500 | 6818 | 4943 | 6100
+Scope 2 market-based | 0 | 0 | 0 | 0
+Scope 3 | 1222404 | 823223 | 768270 | 794000
+Electricity consumption (MWh) | 769401 (2010) | 435468 | 430830 | 432000",change,CONSISTENT,,435468 - 430830 = 4638 MWh = 4.6 GWh,"""~4"" doubles the margin to 1 GWh, so 4.6 GWh fits. The cause (""despite rising demand"") is not checked"
+kpn_05,kpn,101,100,Biogenic emissions related to biogenic fuels (HVO-100) amounted to 117 metric tons CO2e in 2025 compared to 147 metric tons CO2e in 2024.,,"metric tons CO2e | 2024 | 2025
+Gross Scope 1 (biogenic HVO-100 removed and reported separately) | 6818 | 4943",change,CANNOT_VERIFY,,no biogenic row in any table,biogenic figures appear only in the text
+signify_01,signify,42,52,"As a result of our innovations, we have achieved a 60% absolute reduction in scope 1, 2 and 3 greenhouse gas (GHG) emissions across our entire value chain, including emissions from the product use phase, since 2019.",,"tonnes CO2e | 2019 base | 2024 | 2025 | % change 25/24
+Scope 1+2 total (market-based) | 178058 | 85582 | 83474 | -2%
+Category 4: Upstream transportation | 160000 | 74230 | 82797 | 12%
+Category 6: Business travel | 24882 | 13415 | 9323 | -31%
+Category 7: Employee commuting | n.a. | 32846 | 30031 | -9%
+Scope 1+2+3 total (market-based) | 415056061 | 170584143 | 164975579 | -3%",change,CONSISTENT,,(415056061-164975579)/415056061 = 60.3%,
+signify_02,signify,47,52,Signify has reduced 53% of its absolute carbon footprint in operations (Scope 1 & 2) compared to our 2019 baseline,,"tonnes CO2e | 2019 base | 2024 | 2025 | % change 25/24
+Scope 1+2 total (market-based) | 178058 | 85582 | 83474 | -2%
+Category 4: Upstream transportation | 160000 | 74230 | 82797 | 12%
+Category 6: Business travel | 24882 | 13415 | 9323 | -31%
+Category 7: Employee commuting | n.a. | 32846 | 30031 | -9%
+Scope 1+2+3 total (market-based) | 415056061 | 170584143 | 164975579 | -3%",change,CONSISTENT,,(178058-83474)/178058 = 53.1%,
+signify_03,signify,48,52,"In 2025, GHG emissions from business travel and employee commuting decreased by 31% and 9% year-on-year, respectively",,"tonnes CO2e | 2019 base | 2024 | 2025 | % change 25/24
+Scope 1+2 total (market-based) | 178058 | 85582 | 83474 | -2%
+Category 4: Upstream transportation | 160000 | 74230 | 82797 | 12%
+Category 6: Business travel | 24882 | 13415 | 9323 | -31%
+Category 7: Employee commuting | n.a. | 32846 | 30031 | -9%
+Scope 1+2+3 total (market-based) | 415056061 | 170584143 | 164975579 | -3%",change,CONSISTENT,,travel (13415-9323)/13415 = 30.5%. commuting (32846-30031)/32846 = 8.6%,30.5% sits right at the rounding edge
+signify_04,signify,48,48,"Total energy consumption decreased by 15% in 2025, mainly driven by our continued effort in phasing out the production of conventional lighting, which is more energy intensive.",,"MWh | 2024 | 2025
+Total energy consumption | 635605 | 540394
+Share of renewable sources in total energy consumption | 40% | 40%",change,CONSISTENT,,(635605-540394)/635605 = 15.0%,
+signify_05,signify,48,48,"Approximately 12% of our renewable electricity was contracted through our energy providers, 44% was sourced via the procurement of Energy Attribute Certificates (EACs), and 44% came from our participation in Power Purchase Agreements (PPAs).",,"MWh | 2024 | 2025
+Total energy consumption | 635605 | 540394
+Share of renewable sources in total energy consumption | 40% | 40%",value,CANNOT_VERIFY,,energy table has no split by contract type,
+akzonobel_01,akzonobel,38,46,"Our carbon emissions have reduced by 47% (2024: 41%) compared with our baseline, moving well beyond our 25% interim target for 2025, and close to our 50% reduction target for 2030.","Scopes 1 and 2, market-based","tCO2eq | 2018 base | 2024 | 2025
+Scopes 1+2 market-based | 288919 | 169382 | 152177
+Total gross indirect (Scope 3) | 14438628 | 12761437 | 11631185",change,CONSISTENT,,2025: (288919-152177)/288919 = 47.3%. 2024: (288919-169382)/288919 = 41.4%,"about Scopes 1 and 2 (section heading), market-based"
+akzonobel_02,akzonobel,38,74,We've also improved our energy efficiency by 10% (2024: 9%) compared with our 2018 baseline,Energy efficiency = total energy consumption per ton of production,"metric | 2018 baseline | 2024 | 2025
+Total energy consumption per ton of production (KWh/t) | 275 | 251 | 248
+Renewable electricity, own operations incl. on-site solar (%) |  | 65 | 69
+Percentage of contractual instruments, Scope 2 (%) |  | 63 | 67
+  of which bundled (%) |  | 28 | 41
+  of which unbundled (%) |  | 35 | 26",change,CONSISTENT,,2025: (275-248)/275 = 9.8%. 2024: (275-251)/275 = 8.7%,efficiency = energy per ton of production
+akzonobel_03,akzonobel,45,74,"Globally, our bundled certificates represent 41% of our purchased electricity (2024: 28%) and our unbundled certificates represent 26%, (2024: 35%) bringing electricity from renewable sources to 67% of our total purchased amount (2024: 65%).",,"metric | 2018 baseline | 2024 | 2025
+Total energy consumption per ton of production (KWh/t) | 275 | 251 | 248
+Renewable electricity, own operations incl. on-site solar (%) |  | 65 | 69
+Percentage of contractual instruments, Scope 2 (%) |  | 63 | 67
+  of which bundled (%) |  | 28 | 41
+  of which unbundled (%) |  | 35 | 26",value,INCONSISTENT,clear,"2025: 41+26 = 67 (match). 2024: 28+35 = 63, table says 63, claim says 65",65% is the 2024 value of the other row (renewable electricity incl. on-site solar). Looks like the two 2024 values were mixed up
+akzonobel_04,akzonobel,46,46,Our Scope 3 carbon footprint was down 19% versus our 2018 baseline.,,"tCO2eq | 2018 base | 2024 | 2025
+Scopes 1+2 market-based | 288919 | 169382 | 152177
+Total gross indirect (Scope 3) | 14438628 | 12761437 | 11631185",change,CONSISTENT,,(14438628-11631185)/14438628 = 19.4%,
+akzonobel_05,akzonobel,45,74,"In total, 84 of our locations (2024: 83) now use 100% renewable electricity and 40 locations are using solar panels to produce renewable electricity, increasing from 33 locations in 2024.",,"metric | 2018 baseline | 2024 | 2025
+Total energy consumption per ton of production (KWh/t) | 275 | 251 | 248
+Renewable electricity, own operations incl. on-site solar (%) |  | 65 | 69
+Percentage of contractual instruments, Scope 2 (%) |  | 63 | 67
+  of which bundled (%) |  | 28 | 41
+  of which unbundled (%) |  | 35 | 26",value,CANNOT_VERIFY,,no table with numbers of locations,location counts appear only in the text
+asml_01,asml,163,175,We have reduced our scope 1 and 2 emissions from 60 kt to 26 kt between 2019 and 2025 by deploying our energy savings master plans and purchasing more renewable electricity.,,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",change,CONSISTENT,,60 and 26 match the table,
+asml_02,asml,160,175,"In 2025, with emissions of 26 kt CO2e, we have already reduced absolute gross scope 1 and 2 emissions from 2019 by 56%, exceeding the SBTi target.",,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",change,CONSISTENT,,(60-26)/60 = 56.7%,"within the 1 point tolerance, but 56.7 would round to 57. Table values are rounded to whole kt"
+asml_03,asml,172,175,"Between 2019 and 2025, total emissions from the use of sold products have increased from 4,374 kt CO2e to 6,443 kt CO2e",,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",change,CONSISTENT,,4374 and 6443 match the table,
+asml_04,asml,165,175,"In 2025, total emissions related to purchased goods and services (including capital goods) were 4,781 kt CO2e – which is higher than our base year 2019 emissions of 2,841 kt",,"ktCO2e | 2019 | 2024 | 2025
+Subtotal scope 1 and market-based scope 2 | 60 | 33 | 26
+1 Purchased goods and services | 2546 | 4415 | 4373
+2 Capital goods | 295 | 536 | 408
+11 Use of sold products | 4374 | 6569 | 6443",value,CONSISTENT,,2025: 4373+408 = 4781. 2019: 2546+295 = 2841,needs adding two table rows
+asml_05,asml,169,175,"By increasing SAF purchases for part of our global business journeys, we were able to further reduce residual emissions by 28 kt CO2e (2024: 7 kt).","Scope 3 category 6, business travel","ktCO2e | 2019 | 2024 | 2025
+6 Business traveling | 97 | 65 | 32",change,CANNOT_VERIFY,,no SAF or residual emissions row in the table,"SAF = sustainable aviation fuel. The table shows gross business travel (65 -> 32), not the SAF reduction"
